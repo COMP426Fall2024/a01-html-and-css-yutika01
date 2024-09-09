@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Draupadi's Life</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz: Test Your Knowledge About Draupadi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="birth.html">Draupadi's Birth</a></li>
+                <li><a href="marriage.html">Draupadi's Marriage</a></li>
+                <li><a href="role.html">Draupadi's Role</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Quiz on Draupadi's Life</h2>
+        4 questions with drop down selections 
+    <br></br>
+        <form action="">
+            Question 1 Text: Who was Draupadi's first husband?
+            <br></br>
+            <select name="question1">
+            <option value="arjuna">Arjuna</option>
+            <option value="bhima">Bhima</option>
+            <option value="krishna">Krishna</option>
+            <option value="nakula">Nakula</option>
+            </select>
+            <br></br>
+            Question 2 Text: From what was Draupadi born?
+            <br></br>
+            <select name="question2">
+                <option value="light">Light</option>
+                <option value="fire">Fire</option>
+                <option value="womb">Womb</option>
+                <option value="sky">Sky</option>
+                </select>
+                <br></br>
+            Question 3 Text: Which brother gambled Draupadi in a game? 
+            <br></br>
+            <select name="question3">
+                <option value="arjuna">Arjuna</option>
+                <option value="bhima">Bhima</option>
+                <option value="nakula">Nakula</option>
+                <option value="yudhishthira">Yudhishthira</option>
+                </select>
+                <br></br>
+            Question 4 Text: How many husbands did Draupadi have?
+            <br></br>
+            <select name="question4">
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="four">Four</option>
+                <option value="five">Five</option>
+                </select>
+                <br></br>
+            </form>
+        <button class="toggle-button" onclick="myFunction()">Show Answers</button>
+
+    <div id="answers">
+        <p>
+            <ol>
+                Great Job! Here are the correct answers:
+                <li>Answer: Arjuna</li>
+                <li>Answer: Fire</li>
+                <li>Answer: Yudhishthira</li>
+                <li>Answer: Five</li>
+              </ol>
+        </p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("answers");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                document.querySelector('.toggle-button').textContent = "Hide Answers";
+            } else {
+                x.style.display = "none";
+                document.querySelector('.toggle-button').textContent = "Show Answers";
+            }
+        }
+    </script>
+    </main>
+        <footer id="main-footer">
+            <p>&copy; 2024 Draupadi's Story | All Rights Reserved</p>
+        </footer>
+    </body>
+    </html>
